@@ -1,0 +1,47 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.game-board {
+  margin: auto; /* Center horizontally */
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #555;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.square.X::after {
+  content: 'X';
+  color: #007bff; /* Blue color for X */
+}
+
+.square.O::after {
+  content: 'O';
+  color: #28a745; /* Green color for O */
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 20px;
+}
